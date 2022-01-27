@@ -35,4 +35,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Libraries Used
 
-- [chakrai ui] (https://chakra-ui.com/)
+- [chakrai ui](https://chakra-ui.com/)
