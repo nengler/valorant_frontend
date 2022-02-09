@@ -4,7 +4,7 @@ import { AspectRatio, Box, Center, Slide } from "@chakra-ui/react";
 import { SlideFade } from "@chakra-ui/react";
 import Link from "next/link";
 
-export default function Map({ map }) {
+export default function Map({ map, mapImage }) {
   const [isHovered, setIsHovered] = useState(false);
   const isHovering = () => setIsHovered(true);
   const isNotHovering = () => setIsHovered(false);
@@ -28,11 +28,12 @@ export default function Map({ map }) {
             key={map.id}
           >
             <Image
-              src={`/images/maps/splash/${map.uuid.toUpperCase()}_splash.webp`}
+              src={mapImage}
               alt={`Image of ${map.name}`}
               layout="fill"
               objectFit="cover"
               quality={50}
+              placeholder="blur"
             />
             <SlideFade
               style={{ position: "absolute", top: "0", left: "0", right: "0", bottom: "0" }}
